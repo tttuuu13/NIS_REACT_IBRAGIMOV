@@ -1,0 +1,84 @@
+/* MovieCard.css */
+.movie-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.movie-card.grid {
+  width: 250px;
+}
+
+.movie-card.list {
+  width: 80%;
+  max-width: 600px;
+  flex-direction: row;
+  text-align: left;
+}
+
+.movie-poster-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.movie-card.list .movie-poster-container {
+  width: 100px;
+  height: 150px;
+  margin-right: 15px;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-details {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-card.list .movie-details {
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-details h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.movie-card.list .movie-details h3 {
+  margin-bottom: 0;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #ff0000;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.favorite-button:hover {
+  opacity: 0.8;
+}

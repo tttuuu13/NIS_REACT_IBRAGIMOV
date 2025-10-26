@@ -1,0 +1,42 @@
+/* FilterControls.css */
+.filter-controls {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button,
+.view-mode-buttons button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button.active,
+.view-mode-buttons button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.filter-buttons button:hover,
+.view-mode-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-buttons button.active:hover,
+.view-mode-buttons button.active:hover {
+  background-color: #0056b3;
+}
+
+.search-input input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
